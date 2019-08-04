@@ -1,0 +1,118 @@
+html, body, welcome
+{
+	height: 100%;
+}
+body 
+{
+	background-color: #f1f1f1;
+	color: #9e1b21;
+	background-image: url("back.png");
+	font-family: cursive;
+}
+.input
+{
+	margin-top: 10px; 
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.inputbox
+{
+	margin: 5px;
+	padding: 10px;
+	width: 330px;
+	display: table-cell;
+
+}
+.first
+{
+	padding: 15px;
+	margin-bottom: 10px;
+}
+.logo-img
+{
+	float: left;
+	position: relative;
+	margin: 10px 15px 15px 10px;
+	width: 200px;
+	height: 80px;
+}
+.welcome
+{
+	margin-top: 100px; 
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*color: #84a5ea;*/
+	color: #689cd0;
+	text-align: center;
+}
+#second
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px; 
+	text-align: center;
+}
+#btn
+{
+	width: 120px;
+	height: 40px;
+	font-weight: bold;
+	background-color: #9e1b21;
+	color: white;
+	border-radius: 5px;
+}
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	float: right;
+}
+li
+{
+	float: left;
+}
+li a
+{
+	display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: #9e1b21;
+	font-weight: bold;
+}
+#welcome
+{
+	text-align: center;
+}
+a
+{
+	text-decoration: none;
+	color: #9e1b21;
+	font-weight: bold;
+}
+.options
+{
+	margin: 5px;
+	padding: 10px;
+	width: 330px;
+}
+.date
+{
+	padding: 7.5px;
+	margin: 5px;
+	width: 310px;
+}
+.lastbox
+{
+	padding: 10px;
+	margin: 5px;
+	width: 320px;
+}
