@@ -1,8 +1,0 @@
-body background: 
---> #f1f1f1
-Accent Color:
---> #9e1b21
-Welcome Text(home):
---> #75aae0
-Green Box:
---> #46b179
