@@ -1,4 +1,6 @@
-TRIP TRIPURA
+                 ---TRIP TRIPURA---
+A Final Year Project on The Princely State of India
+-----------------------------------------------------
 Joy Dey- Developer
 Kalyanjit Das- Developer
 Pastur Das- Photographer
