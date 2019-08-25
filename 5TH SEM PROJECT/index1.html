@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to TripTripura</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/8db018c26a.js"></script>
+<!-- google font -->
+   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+   <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  #brand
+  {
+  	/*font-family: 'Lobster', cursive;*/
+  	font-family: 'Righteous', cursive;
+  }
+  .jumbotron
+  {
+  	font-family: 'Great Vibes', cursive;
+  	background: transparent;
+  }
+  h1
+  {
+  	font-family: 'Great Vibes', cursive;
+  }
+  .row
+  {
+  	margin: 10px;
+  }
+
+  iframe
+  {
+  	margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+  	margin-top: 50px;
+  	margin-bottom: 50px;
+  }
+  sub{
+    font-weight: 4px;
+  }
+
+  </style>
+</head>
+<body>
+<!--nav bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<a class="navbar-brand" id="brand" href="homepage.html">TripTripura<sub>.com</sub></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html" data-toggle="tooltip" title="Go to the home page "><i class="fas fa-home"></i></a>
+        </li>
+
+
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Discover</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Destination</a>
+                    <a class="dropdown-item" href="#">Wildlife</a>
+                    <a class="dropdown-item" href="#">Museum</a>
+                    <a class="dropdown-item" href="#">Religious Places</a>
+                    <a class="dropdown-item" href="#">Others</a>
+               </div>
+               </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Experience</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Fairs & Festivals</a>
+                    <a class="dropdown-item" href="#">Heritage Properties</a>
+                    <a class="dropdown-item" href="#">Travel Dairies</a>
+               </div>
+               </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Plan</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Best Time to Visit</a>
+                    <a class="dropdown-item" href="#">How To Get There</a>
+                    <a class="dropdown-item" href="#">Tourist Guides</a>
+                    <a class="dropdown-item" href="#">Travel Desk</a>
+                    <a class="dropdown-item" href="#">Packages</a>
+                    <a class="dropdown-item" href="#">Suggested Itineraries</a>
+               </div>
+               </li>
+				<li class="nav-item">
+					<a class="nav-link" href="stay.html">Stay</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Message Board</a>
+				</li>
+        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    E-Ticketing</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Museum</a>
+                    <a class="dropdown-item" href="#">Zoo</a>
+                    <a class="dropdown-item" href="#">Parks</a>
+                    <a class="dropdown-item" href="#">Lakes</a>
+                    <a class="dropdown-item" href="#">Palaces</a>
+               </div>
+               </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
+				</li>
+			</ul>
+
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-secondary my-sm-0" type="submit">Search</button>
+			</form>
+
+		</div>
+	</nav>
+
+<!-- slideshow -->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/homepage/topslider/mahadev-temple.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/homepage/topslider/albert-hall.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="http://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/homepage/topslider/Calendar.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- grid layout ki naakam koushish -->
+
+<!-- Welcome text -->
+<div class="jumbotron text-center">
+	<h1>Welcome to Tripura</h1>
+	<h4>The Princely State of India</h4>
+</div>
+
+<!-- discover cards -->
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img class="card-img-top" src="hotel.jpg"  alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Hotels</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img src="art.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Museum</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img src="wildlife.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Wildlife</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img src="wildlife.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Festivals & Fairs</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img class="card-img-top" src="hotel.jpg"  alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Religious Places</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img src="art.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Museum</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img src="wildlife.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Wildlife</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+		<div class="col-md-3 col-sa-6">
+			<div class="card">
+                <img src="wildlife.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">Wildlife</h5>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- video -->
+
+<iframe width="600" height="300" src="https://www.youtube.com/embed/BtEd4DlJlRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="jumbotron text-center">
+	<h1>Must Do Activities in Tripura</h1>
+</div>
+
+
+
+<!-- Script for tooltip -->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</body>
+</html>
