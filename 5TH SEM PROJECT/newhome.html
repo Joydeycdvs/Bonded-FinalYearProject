@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to TripTripura</title>
+	<meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- google font -->
+   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+   <!-- stylesheet -->
+   <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<!--nav bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<a class="navbar-brand" id="brand" href="#">TripTripura</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Discover</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Attraction</a>
+                    <a class="dropdown-item" href="#">Wildlife</a>
+                    <a class="dropdown-item" href="#">Museum</a>
+                    <a class="dropdown-item" href="#">Religious Places</a>
+                    <a class="dropdown-item" href="#">Others</a>
+               </div>
+               </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Experience</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Fairs & Festivals</a>
+                    <a class="dropdown-item" href="#">Heritage Properties</a>
+                    <a class="dropdown-item" href="#">Travel Dairies</a>
+               </div>
+               </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Plan</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Best Time to Visit</a>
+                    <a class="dropdown-item" href="#">How To Get There</a>
+                    <a class="dropdown-item" href="#">Tourist Guides</a>
+                    <a class="dropdown-item" href="#">Travel Desk</a>
+                    <a class="dropdown-item" href="#">Packages</a>
+                    <a class="dropdown-item" href="#">Suggested Itineraries</a>
+               </div>
+               </li>
+				<li class="nav-item">
+					<a class="nav-link" href="stay.html">Stay</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="stay.html">Message Board</a>
+				</li>
+        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    E-Ticketing</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Museum</a>
+                    <a class="dropdown-item" href="#">Zoo</a>
+                    <a class="dropdown-item" href="#">Parks</a>
+                    <a class="dropdown-item" href="#">Lakes</a>
+                    <a class="dropdown-item" href="#">Palaces</a>
+               </div>
+               </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
+				</li>
+			</ul>
+
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-secondary my-sm-0" type="submit">Search</button>
+			</form>
+
+		</div>
+	</nav>
+
+<!-- slideshow -->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slide1.png" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="slide2.png" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="slide3.png" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- discover cards -->
+<div class="body">
+  <!-- Welcome text -->
+  <div class="jumbotron text-center">
+  <h1>Welcome to Tripura</h1>
+  <h4>The Princely State of India</h4>
+</div>
+  <div class="feed">
+            <div class="card">
+                <p class="card__category">Travel</p>
+                <p class="card__title">Lost in the city is where I found myself</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Guide</p>
+                <p class="card__title">Guide to Tripura</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Wildlife</p>
+                <p class="card__title">A lost city on the rolling hills</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Guide</p>
+                <p class="card__title">The 10 things you must do when visiting Tripura</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Festivals</p>
+                <p class="card__title">Top 10 Festivals in Tripura</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Guide</p>
+                <p class="card__title">Travel guide: 10 days stay in Tripura</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Travel</p>
+                <p class="card__title">Top 3 parks in Tripura</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Review</p>
+                <p class="card__title">Top 10 local foods in the Tripura</p>
+            </div>
+            <div class="card">
+                <p class="card__category">Guide</p>
+                <p class="card__title">Guide to Pilak</p>
+            </div>
+        </div>
+</div>
+
+<!-- video -->
+
+<iframe width="600" height="300" src="https://www.youtube.com/embed/BtEd4DlJlRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="jumbotron text-center">
+	<h1>Must Do Activities in Tripura</h1>
+</div>
+
+<!-- Script for tooltip -->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</body>
+</html>
