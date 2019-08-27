@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message Board - TripTripura</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+    	.container
+    	{
+    		margin-top: 30px;
+    	}
+    	.container h1
+    	{
+    		text-align: center;
+    		font-family: 'Fredoka One', cursive;
+    	}
+    	.jumbotron
+    	{
+    		background: transparent;
+    		color: #fff;
+    	}
+    	#brand
+        {
+        	/*font-family: 'Lobster', cursive;*/
+        	font-family: 'Righteous', cursive;
+        }
+    	.container p
+    	{
+    		font-size: 15px;
+    		text-align: center;
+    		color: #fff;
+    	}
+    	.card
+    	{
+    		border-radius: 10px;
+    		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    	}
+
+    	body
+    	{
+    		background-color: #ff9d00;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+           background-attachment: fixed;
+           background-size: cover;
+    	}
+
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Discover</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Attraction</a>
+                    <a class="dropdown-item" href="#">Wildlife</a>
+                    <a class="dropdown-item" href="#">Museum</a>
+                    <a class="dropdown-item" href="#">Religious Places</a>
+                    <a class="dropdown-item" href="#">Others</a>
+               </div>
+               </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Experience</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Fairs & Festivals</a>
+                    <a class="dropdown-item" href="#">Heritage Properties</a>
+                    <a class="dropdown-item" href="#">Travel Dairies</a>
+               </div>
+               </li>
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Plan</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Best Time to Visit</a>
+                    <a class="dropdown-item" href="#">How To Get There</a>
+                    <a class="dropdown-item" href="#">Tourist Guides</a>
+                    <a class="dropdown-item" href="#">Travel Desk</a>
+                    <a class="dropdown-item" href="#">Packages</a>
+                    <a class="dropdown-item" href="#">Suggested Itineraries</a>
+               </div>
+               </li>
+				<li class="nav-item">
+					<a class="nav-link" href="stay.html">Stay</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="messageboard.html">Message Board</a>
+				</li>
+        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    E-Ticketing</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Museum</a>
+                    <a class="dropdown-item" href="#">Zoo</a>
+                    <a class="dropdown-item" href="#">Parks</a>
+                    <a class="dropdown-item" href="#">Lakes</a>
+                    <a class="dropdown-item" href="#">Palaces</a>
+               </div>
+               </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
+				</li>
+			</ul>
+
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-secondary my-sm-0" type="submit">Search</button>
+			</form>
+
+		</div>
+</nav>
+
+<!-- form -->
+
+<div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+
+                <div class="jumbotron text-center">
+                	<h1>We would love to hear from you!</h1><br>
+                	<h6 class="lead">Our team is happy to answer your questions. Fill out the form and we will be in touch with you as soon as possible.</h6>
+                </div>
+
+                <div class="card">
+                   <div class="card-body">
+                   	<form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Please specify your query</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                        <option value=""></option>
+                                        <option value="Request quotation">Buisness Enquiry</option>
+                                        <option value="Request order status">Trade Facility</option>
+                                        <option value="Request copy of an invoice">Feedback</option>
+                                        <option value="Other">Others</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Type here...." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" class="btn btn-danger btn-send" value="Send message">
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+             </form>
+          </div>
+        <!-- /.8 -->
+      </div>
+        <!-- /.row-->
+
+    </div>
+
+</body>
+</html>
