@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Make the image fully responsive */
+        body {
+            overflow: hidden;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 768px;
+            object-fit: cover;
+        }
+
+        .main-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        hr {
+            height: 3px;
+            color: aqua;
+            background-color: aqua;
+            border: none;
+            width: 30%;
+        }
+
+        .overlay {
+            background-color: #040219;
+            opacity: 0.55;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            height: 800px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .button9 {
+            position: relative;
+            transform: translateZ(0);
+            transition: color 0.3s ease;
+            width: 180px;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0);
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            text-align: center;
+            outline: none;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .button9:before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background: aqua;
+            border-radius: 5px;
+            content: '';
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-out;
+            z-index: -1;
+        }
+
+        .button9:hover,
+        .button9:focus,
+        .button9:active {
+            color: black;
+            cursor: pointer;
+            animation-name: floating;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        .button9:hover:before,
+        .button9:focus:before,
+        .button9:active:before {
+            transform: scaleX(1);
+        }
+
+
+        @keyframes floating {
+            from {
+                transform: translate(0, 0px);
+            }
+
+            65% {
+                transform: translate(0, 15px);
+            }
+
+            to {
+                transform: translate(0, -0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+
+
+        <!-- Indicators -->
+
+
+
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="fp1.jpeg" alt="Los Angeles" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="fp2.jpeg" alt="Chicago" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="fp5.jpeg" alt="New York" width="1100" height="500">
+            </div>
+            <div class="overlay"></div>
+            <div class="main-text hidden-xs">
+                <div class="col-md-12 text-center">
+                    <h1>
+                        Welcome to TripTripura</h1>
+
+                    <h5>
+                        Embark on a Journey to the Princely State!
+                    </h5>
+                    <hr>
+
+                    <div class="button">
+                        <button class="button9">Explore as Tourist</button>
+                        <button class="button9">Explore as Local</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Left and right controls -->
+
+        </div>
+
+</body>
+
+<script>
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("carousel-item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+
+</html>
