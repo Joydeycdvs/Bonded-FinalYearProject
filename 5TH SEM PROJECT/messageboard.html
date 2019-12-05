@@ -1,9 +1,4 @@
-/*
- * @Author: joy.dey 
- * @Date: 2019-11-08 19:45:08 
- * @Last Modified by: joy.dey
- * @Last Modified time: 2019-11-08 19:47:34
- */
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +14,9 @@
     
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <!-- Darkmode CSS -->
+    <link rel="stylesheet" href="dark-mode.css">
+
     <style type="text/css">
     	.container
     	{
@@ -31,8 +29,8 @@
     	}
     	.jumbotron
     	{
-    		background: transparent;
-    		color: #fff;
+            background: transparent;
+            color: white;
     	}
     	#brand
         {
@@ -50,6 +48,11 @@
     		border-radius: 10px;
     		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     	}
+
+        .navbar a
+        {
+            color: gray !important;
+        }
 
     	body
     	{
@@ -123,7 +126,12 @@
 				<li class="nav-item">
 					<a class="nav-link" href="about.html">About Us</a>
 				</li>
-			</ul>
+            </ul>
+            <!-- Darkmode Switch -->
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">🌓 </label>
+              </div>
 
 			<form class="form-inline">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -135,7 +143,7 @@
 
 <!-- form -->
 
-<div class="container">
+<div class="container bg-dark>
 
         <div class="row">
 
@@ -146,7 +154,7 @@
                 	<h6 class="lead">Our team is happy to answer your questions. Fill out the form and we will be in touch with you as soon as possible.</h6>
                 </div>
 
-                <div class="card">
+                <div class="card bg-light">
                    <div class="card-body">
                    	<form id="contact-form" method="post" action="contact.php" role="form">
 
@@ -201,7 +209,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 text-center">
-                                <input type="submit" class="btn btn-danger btn-send" value="Send message">
+                                <input type="submit" class="btn btn-secondary btn-send" value="Send message">
                             </div>
                         </div>
                       </div>
@@ -213,6 +221,7 @@
       </div>
         <!-- /.row-->
 </div>
-
+<!-- Darkmode JS -->
+<script src="dark-mode-switch.js"></script>
 </body>
 </html>

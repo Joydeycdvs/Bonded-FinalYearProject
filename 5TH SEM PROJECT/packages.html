@@ -1,9 +1,4 @@
-/*
- * @Author: joy.dey 
- * @Date: 2019-11-08 19:43:57 
- * @Last Modified by:   joy.dey 
- * @Last Modified time: 2019-11-08 19:43:57 
- */
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +12,7 @@
     <!-- google fonts link -->
 	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="dark-mode.css">
 	
 	<style>
 		#brand
@@ -29,6 +25,10 @@
     		margin-top: 50px;
     		background-image: url('art.jpg');
     	}
+		.navbar a
+        {
+            color: gray !important;
+        }
 		.card
 	    {
 		    padding: 10px;
@@ -101,7 +101,10 @@
                         <a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
                     </li>
                 </ul>
-    
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="darkSwitch" />
+					<label class="custom-control-label" for="darkSwitch">🌓 </label>
+				  </div>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-secondary my-sm-0" type="submit">Search</button>
@@ -124,7 +127,7 @@
 <div class="container py-3">
 	<h2>PACKAGES</h2>
 	<hr>
-	<div class="card">
+	<div class="card bg-light">
 	    <div class="row ">
 			<div class="col-md-4">
 				<img src="image-1.jpg" class="w-100">
@@ -142,7 +145,7 @@
 </div>
 
 <div class="container py-3">
-		<div class="card">
+		<div class="card bg-light">
 			<div class="row ">
 				<div class="col-md-4">
 					<img src="image-2.jpg" class="w-100">
@@ -160,7 +163,7 @@
 </div>
 
 <div class="container py-3">
-		<div class="card">
+		<div class="card bg-light">
 			<div class="row ">
 				<div class="col-md-4">
 					<img src="image-3.jpg" class="w-100">
@@ -178,7 +181,7 @@
 </div>
 
 <div class="container py-3">
-		<div class="card">
+		<div class="card bg-light">
 			<div class="row ">
 				<div class="col-md-4">
 					<img src="image-4.jpg" class="w-100">
@@ -196,7 +199,7 @@
 </div>
 
 <div class="container py-3">
-		<div class="card">
+		<div class="card bg-light">
 			<div class="row ">
 				<div class="col-md-4">
 					<img src="image-9.jpg" class="w-100">
@@ -212,5 +215,7 @@
 			</div>
 		</div>
 </div>
+
+<script src="dark-mode-switch.js"></script>
 </body>
 </html>

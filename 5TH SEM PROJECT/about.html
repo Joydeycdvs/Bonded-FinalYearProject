@@ -14,13 +14,16 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="dark-mode.css">
 
     <style type="text/css">
 
     	.jumbotron{
     		margin-top: 50px;
     		background-image: url('about.png');
-    		background-size: cover; 
+    		background-size: cover;
+        height: 350px; 
     	}
     	.container
     	{
@@ -36,6 +39,11 @@
         {
           /*font-family: 'Lobster', cursive;*/
           font-family: 'Righteous', cursive;
+        }
+
+        .navbar a
+        {
+            color: gray !important;
         }
 
     	.social-link 
@@ -125,7 +133,10 @@
 					<a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
 				</li>
 			</ul>
-
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+        <label class="custom-control-label" for="darkSwitch">🌓 </label>
+        </div>
 			<form class="form-inline">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-secondary my-sm-0" type="submit">Search</button>
@@ -158,7 +169,7 @@
     <div class="row text-center">
       <!-- Team item-->
       <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+        <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
           <h5 class="mb-0">Debanjan Biswas</h5><span class="small text-uppercase text-muted">Designer</span>
           <ul class="social mb-0 list-inline mt-3">
             <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
@@ -172,7 +183,7 @@
 
       <!-- Team item-->
       <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+        <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834130/avatar-3_hzlize.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
           <h5 class="mb-0">Kalyanjit Das</h5><span class="small text-uppercase text-muted">Developer</span>
           <ul class="social mb-0 list-inline mt-3">
             <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
@@ -186,7 +197,7 @@
 
       <!-- Team item-->
       <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-1_s02nlg.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+        <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-1_s02nlg.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
           <h5 class="mb-0">Joy Dey</h5><span class="small text-uppercase text-muted">Developer</span>
           <ul class="social mb-0 list-inline mt-3">
             <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
@@ -200,7 +211,7 @@
 
       <!-- Team item-->
       <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-2_f8dowd.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+        <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834133/avatar-2_f8dowd.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
           <h5 class="mb-0">Pastur Das</h5><span class="small text-uppercase text-muted">Photographer</span>
           <ul class="social mb-0 list-inline mt-3">
             <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
@@ -214,5 +225,6 @@
 
     </div>
 </div>
+<script src="dark-mode-switch.js"></script>
 </body>
 </html>

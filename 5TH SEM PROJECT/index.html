@@ -1,9 +1,4 @@
-/*
- * @Author: joy.dey 
- * @Date: 2019-11-08 19:43:10 
- * @Last Modified by: joy.dey
- * @Last Modified time: 2019-11-08 19:45:27
- */
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +17,8 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
    <!-- stylesheet -->
    <link rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="stylesheet" href="dark-mode.css">
+   
 </head>
 <body>
 <!--nav bar -->
@@ -85,7 +82,11 @@
 				<li class="nav-item">
 					<a class="nav-link" href="about.html">About Us</a>
 				</li>
-			</ul>
+      </ul>
+      <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+          <label class="custom-control-label" for="darkSwitch">🌓 </label>
+        </div>
 
 			<form class="form-inline">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -189,5 +190,6 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
+<script src="dark-mode-switch.js"></script>
 </body>
 </html>

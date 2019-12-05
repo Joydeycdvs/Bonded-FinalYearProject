@@ -13,6 +13,12 @@
   	background: transparent;
     padding: 0 0 35px 0;
   }
+
+  a
+  {
+      color: grey !important;
+  }
+ 
   h1
   {
   	font-family: 'Great Vibes', cursive;
@@ -46,6 +52,7 @@
     grid-gap: 16px;
     margin: 40px 0 40px 0;
 }
+
 
 .card__category {
     font-family: Muli, sans-serif;

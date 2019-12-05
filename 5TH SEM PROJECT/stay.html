@@ -1,9 +1,4 @@
-/*
- * @Author: joy.dey 
- * @Date: 2019-11-08 19:44:45 
- * @Last Modified by:   joy.dey 
- * @Last Modified time: 2019-11-08 19:44:45 
- */
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="dark-mode.css">
 
    <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
@@ -53,6 +49,16 @@
 	{
 		padding: 8px 16px;
 	}
+
+  a
+  {
+    color: gray !important;
+  }
+
+  .btn
+  {
+    color: white !important;
+  }
 
 </style>
 
@@ -121,6 +127,11 @@
         </li>
       </ul>
 
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+        <label class="custom-control-label" for="darkSwitch">🌓 </label>
+      </div>
+
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary my-sm-0" type="submit">Search</button>
@@ -182,7 +193,7 @@
 
 
 <div class="container py-3">
-    <div class="card">
+    <div class="card bg-light">
       <div class="row ">
         <div class="col-md-4">
             <img src="art.jpg" class="w-100">
@@ -204,7 +215,7 @@
 
 
 <div class="container py-3">
-    <div class="card">
+    <div class="card bg-light">
       <div class="row ">
         <div class="col-md-4">
             <img src="art.jpg" class="w-100">
@@ -224,6 +235,6 @@
     </div>
   </div>
 
-
+  <script src="dark-mode-switch.js"></script>
 </body>
 </html>
