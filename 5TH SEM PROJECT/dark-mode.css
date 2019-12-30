@@ -8,6 +8,26 @@
   background-color: #333 !important;
 }
 
+[data-theme="dark"] .bg-lite {
+  background-color: #343a40 !important;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #bb86fc !important;
+}
+
+[data-theme="dark"] .navbar-brand {
+  color: #bb86fc !important;
+}
+
+[data-theme="dark"] .bg-pink {
+  color: #bb86fc;
+}
+
+[data-theme="dark"] .btn-send {
+  background-color: #7c4dff !important;
+}
+
 [data-theme="dark"] .bg-white {
   background-color: #000 !important;
 }

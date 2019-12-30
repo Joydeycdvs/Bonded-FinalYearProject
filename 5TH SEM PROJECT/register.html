@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <script src="https://kit.fontawesome.com/424e3e7db4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <!-- Darkmode CSS -->
+    <link rel="stylesheet" href="dark-mode.css">
+    <title>Register - TripTripura</title>
+    <style>
+        .container-fluid {
+            margin-top: 100px;
+        }
+
+        .card h4 {
+            text-align: center;
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .jumbotron {
+            margin-top: 30px;
+            font-family: 'Fredoka One', cursive;
+            background: transparent;
+            color: white;
+        }
+
+        #brand {
+            /*font-family: 'Lobster', cursive;*/
+            font-family: 'Righteous', cursive;
+        }
+
+        .container p {
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: gray !important;
+        }
+
+        /* #left
+        {
+            margin: auto;
+            display: block;
+        } */
+        #left h3 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 72px;
+
+        }
+
+        #right h1,
+        h3 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #btn {
+            width: 150px;
+            margin-top: 10px;
+        }
+
+        #right {
+            padding: 30px;
+        }
+
+        ::placeholder {
+            color: gray !important;
+        }
+
+        input {
+            color: gray !important;
+        }
+
+        .col {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            color: white !important;
+        }
+        #tos
+        {
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Discover</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Attraction</a>
+                        <a class="dropdown-item" href="#">Wildlife</a>
+                        <a class="dropdown-item" href="#">Museum</a>
+                        <a class="dropdown-item" href="#">Religious Places</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Experience</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Fairs & Festivals</a>
+                        <a class="dropdown-item" href="#">Heritage Properties</a>
+                        <a class="dropdown-item" href="#">Travel Dairies</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Plan</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Best Time to Visit</a>
+                        <a class="dropdown-item" href="#">How To Get There</a>
+                        <a class="dropdown-item" href="#">Tourist Guides</a>
+                        <a class="dropdown-item" href="#">Travel Desk</a>
+                        <a class="dropdown-item" href="#">Packages</a>
+                        <a class="dropdown-item" href="#">Suggested Itineraries</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stay.html">Stay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="messageboard.html">Message Board</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        E-Ticketing</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Museum</a>
+                        <a class="dropdown-item" href="#">Zoo</a>
+                        <a class="dropdown-item" href="#">Parks</a>
+                        <a class="dropdown-item" href="#">Lakes</a>
+                        <a class="dropdown-item" href="#">Palaces</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li> -->
+            </ul>
+            <!-- Darkmode Switch -->
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">🌓 </label>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 text-center" id="left">
+                <img src="registeruser.svg" alt="" srcset="" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-md-6" id="right">
+                <h1 class="bg-pink">Welcome to TripTripura!</h1>
+                <h3 class="bg-pink">Let's get started😊</h3>
+                <p>Create your Account now. It's free and only takes a minute.</p>
+                <!-- <div class="card bg-light">
+                    <div class="card-body">
+
+                        <form action="404.html" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email">Username or Email:</label>
+                                <input type="email" class="form-control bg-lite" id="email"
+                                    placeholder="Enter username or email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control bg-lite" id="pwd" data-toggle="password"
+                                    placeholder="Enter your password" name="pswd">
+                            </div>
+                            <div class="col d-flex">
+                                <button type="submit" class="btn btn-primary">LOG IN</button>
+                                <a href="#" class="text-right ml-auto">Forgot Password?</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div> -->
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <form id="contact-form" method="post" action="contact.php" role="form" autocomplete="off">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Firstname</label>
+                                            <input id="form_name" type="text" name="name" class="form-control bg-lite"
+                                                placeholder="Please enter your firstname" required="required"
+                                                data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Lastname</label>
+                                            <input id="form_lastname" type="text" name="surname"
+                                                class="form-control bg-lite" placeholder="Please enter your lastname"
+                                                required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email</label>
+                                            <input id="form_email" type="email" name="email"
+                                                class="form-control bg-lite" placeholder="Please enter your email"
+                                                required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Confirm Email</label>
+                                            <input id="form_email" type="email" name="email"
+                                                class="form-control bg-lite" placeholder="Please enter your email"
+                                                required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_password">Password</label>
+                                            <input id="form_password" type="password" name="password"
+                                                class="form-control bg-lite" placeholder="Please enter your password"
+                                                required="required" data-error="Valid password is required." data-toggle="password">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_password">Confirm Password</label>
+                                            <input id="form_password" type="password" name="password"
+                                                class="form-control bg-lite"
+                                                placeholder="Please re-enter your password" required="required"
+                                                data-error="password doesn't match" data-toggle="password">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_lastname">Gender</label><br>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio3" value="option3">
+                                                    <label class="form-check-label" for="inlineRadio3">Others</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Create Account As?</label><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Tourist</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">Local</label>
+                                                    </div>
+                                                    <!-- <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio3" value="option3">
+                                                        <label class="form-check-label" for="inlineRadio3">Student</label>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                    </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <input type="button" class="btn btn-secondary btn-send" value="Sign Up">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <p id="tos">By clicking Sign Up, you agree to our <a href="#">Terms and Conditions</a></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="col text-center">
+                    <p>Already have an account? <a href="login.html">Sign-in</a><br>Need Help? <a href="messageboard.html">Contact us</a> </p>
+                    <p> </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Darkmode JS -->
+    <script src="dark-mode-switch.js"></script>
+</body>
+
+</html>
