@@ -9,7 +9,7 @@
   }
   .jumbotron
   {
-  	font-family: 'Great Vibes', cursive;
+    font-family: 'Fredoka One', cursive;
   	background: transparent;
     padding: 0 0 35px 0;
   }
@@ -21,7 +21,7 @@
  
   h1
   {
-  	font-family: 'Great Vibes', cursive;
+    font-family: 'Fredoka One', cursive;
   }
   .row
   {
@@ -340,3 +340,26 @@
         -ms-grid-column: span 12;
             grid-column-start: span 12;
     }
+}
+
+
+/* footer */
+
+.unique-color-dark {
+    background-color: #1c2331 !important;
+}
+
+.white-text
+{
+    color: white;
+}
+
+.deep-purple.accent-2 {
+    background-color: #7c4dff !important;
+}
+
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.2);
+}
