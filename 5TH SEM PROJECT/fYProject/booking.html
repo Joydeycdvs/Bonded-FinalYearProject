@@ -14,6 +14,7 @@
     <!-- google fonts link -->
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="dark-mode.css">
     <!-- stylesheet -->
     <style>
         #brand
@@ -25,8 +26,7 @@
         {
     		margin-top: 50px;
     		background-image: url('art.jpg');
-            backdrop-filter:blur(10px);
-            background-color: rgba(255, 255, 255, 0.5);  
+            background-color: rgba(0, 0, 0, 0.904);  
     		background-size: cover; 
     	}
         .card
@@ -54,7 +54,7 @@
     </style>
 </head>
 
-
+class=""
 <body>
 <!-- nav goes here -->         
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -117,8 +117,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
                     </li>
+                    
                 </ul>
-    
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch">🌓 </label>
+                  </div>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-secondary my-sm-0" type="submit">Search</button>
@@ -128,7 +132,7 @@
 </nav>
 <div class="jumbotron text-center">
     <div class="container py-5 text-white text-center">
-         <h1 class="text-shadow hero-heading">E-Ticketing</h1>
+         <h1 class="text-shadow hero-heading ">E-Ticketing</h1>
          <p class="text-shadow lead my-4">Your Bookings made easy & hassle-free by TripTripura</p><a href="#" class="btn btn-outline-light">Go Now</a>
     </div>
 </div> 
@@ -140,7 +144,7 @@
                 <div class="header">
                     <h3>Book Your Ticket Now</h3>
                 </div>               
-                <div class="card">
+                <div class="card bg-light">
                    <div class="card-body">
                    	<form id="contact-form" method="post" action="contact.php" role="form">
 
@@ -386,4 +390,5 @@
 
 
 </body>
+<script src="dark-mode-switch.js"></script>
 </html>
