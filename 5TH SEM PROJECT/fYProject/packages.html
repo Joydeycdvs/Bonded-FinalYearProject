@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pacakges - TripTripura</title>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- google fonts link -->
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="dark-mode.css">
+
+	<style>
+		#brand {
+			/*font-family: 'Lobster', cursive;*/
+			font-family: 'Righteous', cursive;
+		}
+
+		.jumbotron {
+			margin-top: 50px;
+			background-image: url('art.jpg');
+		}
+
+		.navbar, footer a {
+			color: gray !important;
+		}
+
+		.card {
+			padding: 10px;
+		}
+
+		.card-title {
+			margin-top: 5px;
+		}
+
+		/* footer */
+
+		.unique-color-dark {
+			background-color: #1c2331 !important;
+		}
+
+		.white-text {
+			color: white;
+		}
+
+		.deep-purple.accent-2 {
+			background-color: #7c4dff !important;
+		}
+
+		footer.page-footer .footer-copyright {
+			overflow: hidden;
+			color: rgba(255, 255, 255, 0.6);
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+
+<body>
+	<!--nav bar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+	<a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mx-auto">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Discover</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="ATTRACTION.HTML">Attraction</a>
+				<a class="dropdown-item" href="WILDLIFE.HTML">Wildlife</a>
+				<a class="dropdown-item" href="MUSEUM.HTML">Museum</a>
+				<a class="dropdown-item" href="religiousplaces.html">Religious Places</a>
+				<a class="dropdown-item" href="#">Others</a>
+		   </div>
+		   </li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Experience</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Fairs & Festivals</a>
+				<a class="dropdown-item" href="#">Heritage Properties</a>
+				<a class="dropdown-item" href="#">Travel Dairies</a>
+		   </div>
+		   </li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Plan</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Best Time to Visit</a>
+				<a class="dropdown-item" href="#">How To Get There</a>
+				<a class="dropdown-item" href="#">Tourist Guides</a>
+				<a class="dropdown-item" href="#">Travel Desk</a>
+				<a class="dropdown-item" href="packages.html">Packages</a>
+				<a class="dropdown-item" href="#">Suggested Itineraries</a>
+		   </div>
+		   </li>
+			<li class="nav-item">
+				<a class="nav-link" href="stay.html">Stay</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="messageboard.html">Message Board</a>
+			</li>
+	<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="booking.html" id="navbardrop" data-toggle="dropdown">
+				E-Ticketing</a>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Museum</a>
+				<a class="dropdown-item" href="#">Zoo</a>
+				<a class="dropdown-item" href="#">Parks</a>
+				<a class="dropdown-item" href="#">Lakes</a>
+				<a class="dropdown-item" href="#">Palaces</a>
+		   </div>
+		   </li>
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About Us</a>
+			</li>
+  </ul>
+  <div class="custom-control custom-switch">
+	  <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+	  <label class="custom-control-label" for="darkSwitch">🌓 </label>
+	</div>
+
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-secondary my-sm-0" type="submit">Search</button>
+		</form>
+
+	</div>
+</nav>
+	<div class="jumbotron text-center">
+		<div class="container py-5 text-white text-center">
+			<h1 class="text-shadow hero-heading">TRIPURA TOURISM PACKAGES</h1>
+			<p class="text-shadow lead my-4">Your Bookings made easy & hassle-free by TripTripura</p><a href="#"
+				class="btn btn-outline-light">Go Now</a>
+		</div>
+	</div>
+	<div class="container py-3">
+		<h2>BEST OF TRIPURA TOUR</h2>
+		<hr>
+		<p>Embark on a beautiful journey filled with nature, history and tranquillity to Tripura with Tour My India.
+			This state in North East India is indeed a travellers’ heaven with numerous paradisiacal attractions in its
+			fold. This beautiful destination is serene and incomparably gorgeous and through our 4N/5D Tripura tour, we
+			give you a chance to relish the best of this beaut state. Our meticulously designed Tripura trip starts with
+			exploration of the capital city, Agartala which is dotted with various temples and a palace. After the
+			Agartala, we have the famed land of temples, Udaipur awaiting on our Tripura itinerary for you. En route,
+			the tour becomes enthralling with the opportunity of the expedition in Sipahijala Wildlife Sanctuary, the
+			home to many indigenous flora & fauna species. The travel itinerary reserves a day to explore Unakoti where
+			you’ll be on a short heritage tour witnessing the ancient rock sculptures. Adding more to this tour are our
+			impeccable services of accommodation, food and transportation.</p>
+	</div>
+
+	<div class="container py-3">
+		<h2>PACKAGES</h2>
+		<hr>
+		<div class="card bg-light">
+			<div class="row ">
+				<div class="col-md-4">
+					<img src="image-1.jpg" class="w-100">
+				</div>
+				<div class="col-md-8 px-3">
+					<div class="card-block px-3">
+						<h4 class="card-title">EXPLORE TRIPURA</h4>
+						<p><strong>Duration: 8 (eight) days/7 (seven) nights.</strong></p>
+						<p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. </p>
+						<a href="#" class="btn btn-primary btn-sm">View Package Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-3">
+		<div class="card bg-light">
+			<div class="row ">
+				<div class="col-md-4">
+					<img src="image-2.jpg" class="w-100">
+				</div>
+				<div class="col-md-8 px-3">
+					<div class="card-block px-3">
+						<h4 class="card-title">AMAZING TRIPURA TOUR</h4>
+						<p><strong>Duration: 8 (eight) days/7 (seven) nights.</strong></p>
+						<p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. </p>
+						<a href="#" class="btn btn-primary btn-sm">View Package Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-3">
+		<div class="card bg-light">
+			<div class="row ">
+				<div class="col-md-4">
+					<img src="image-3.jpg" class="w-100">
+				</div>
+				<div class="col-md-8 px-3">
+					<div class="card-block px-3">
+						<h4 class="card-title">PILIGRIM TOUR</h4>
+						<p><strong>Duration: 4 (four) days/3 (three) nights.</strong></p>
+						<p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. </p>
+						<a href="#" class="btn btn-primary btn-sm">View Package Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-3">
+		<div class="card bg-light">
+			<div class="row ">
+				<div class="col-md-4">
+					<img src="image-4.jpg" class="w-100">
+				</div>
+				<div class="col-md-8 px-3">
+					<div class="card-block px-3">
+						<h4 class="card-title">ECHO TOURISM PACKAGE</h4>
+						<p><strong>Duration: 5 (five) days/4 (four) nights.</strong></p>
+						<p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. </p>
+						<a href="#" class="btn btn-primary btn-sm">View Package Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-3">
+		<div class="card bg-light">
+			<div class="row ">
+				<div class="col-md-4">
+					<img src="image-9.jpg" class="w-100">
+				</div>
+				<div class="col-md-8 px-3">
+					<div class="card-block px-3">
+						<h4 class="card-title">WEEKEND PACKAGE TOUR</h4>
+						<p><strong>Duration: 3 (three) days/2 (two) nights.</strong></p>
+						<p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. </p>
+						<a href="#" class="btn btn-primary btn-sm">View Package Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="page-footer font-small unique-color-dark">
+
+		<div style="background-color: #6351ce;">
+			<div class="container">
+
+				<!-- Grid row-->
+				<div class="row py-4 d-flex align-items-center">
+
+					<!-- Grid column -->
+					<div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+						<h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+					</div>
+					<!-- Grid column -->
+
+					<!-- Grid column -->
+					<div class="col-md-6 col-lg-7 text-center text-md-right">
+
+						<!-- Facebook -->
+						<a class="fb-ic">
+							<i class="fab fa-facebook-f white-text mr-4"> </i>
+						</a>
+						<!-- Twitter -->
+						<a class="tw-ic">
+							<i class="fab fa-twitter white-text mr-4"> </i>
+						</a>
+						<!-- Google +-->
+						<a class="gplus-ic">
+							<i class="fab fa-google-plus-g white-text mr-4"> </i>
+						</a>
+						<!--Linkedin -->
+						<a class="li-ic">
+							<i class="fab fa-linkedin-in white-text mr-4"> </i>
+						</a>
+						<!--Instagram-->
+						<a class="ins-ic">
+							<i class="fab fa-instagram white-text"> </i>
+						</a>
+
+					</div>
+					<!-- Grid column -->
+
+				</div>
+				<!-- Grid row-->
+
+			</div>
+		</div>
+
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left mt-5">
+
+			<!-- Grid row -->
+			<div class="row mt-3">
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+					<!-- Content -->
+					<h6 class="text-uppercase font-weight-bold white-text">Company name</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p class="white-text">Here you can use rows and columns to organize your footer content. Lorem ipsum
+						dolor sit amet,
+						consectetur
+						adipisicing elit.</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+					<!-- Links -->
+					<h6 class="text-uppercase font-weight-bold white-text">Products</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p>
+						<a href="#!">MDBootstrap</a>
+					</p>
+					<p>
+						<a href="#!">MDWordPress</a>
+					</p>
+					<p>
+						<a href="#!">BrandFlow</a>
+					</p>
+					<p>
+						<a href="#!">Bootstrap Angular</a>
+					</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+					<!-- Links -->
+					<h6 class="text-uppercase font-weight-bold white-text">Useful links</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p>
+						<a href="#!">Your Account</a>
+					</p>
+					<p>
+						<a href="#!">Become an Affiliate</a>
+					</p>
+					<p>
+						<a href="#!">Shipping Rates</a>
+					</p>
+					<p>
+						<a href="#!">Help</a>
+					</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+					<!-- Links -->
+					<h6 class="text-uppercase font-weight-bold white-text">Contact</h6>
+					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+					<p class="white-text">
+						<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+					<p class="white-text">
+						<i class="fas fa-envelope mr-3"></i> info@example.com</p>
+					<p class="white-text">
+						<i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+					<p class="white-text">
+						<i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+				</div>
+				<!-- Grid column -->
+
+			</div>
+			<!-- Grid row -->
+
+		</div>
+		<!-- Footer Links -->
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2018 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+
+
+	<script src="dark-mode-switch.js"></script>
+</body>
+
+</html>
