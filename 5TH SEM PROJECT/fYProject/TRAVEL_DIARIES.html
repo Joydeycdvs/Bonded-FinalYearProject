@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <title>Travel Diaries- TripTripura</title>
     <meta charset="utf-8">
@@ -17,7 +17,8 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">  
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Darkmode CSS -->
     <link rel="stylesheet" href="dark-mode.css">
 
@@ -37,6 +38,7 @@
         #container h1 {
             text-align: center;
             font-family: 'Fredoka One', cursive;
+            margin-top: 20%;
         }
 
         .jumbotron {
@@ -61,7 +63,14 @@
         }
 
         .navbar a {
-            color: gray !important;
+            color: rgb(63, 63, 63) !important;
+        }
+        .darkb{
+          margin-left: 13%;
+        }
+        .file-field
+        {
+          width: 50% important;
         }
 
         body {
@@ -71,8 +80,7 @@
             background-size: cover;
         }
 
-        .form
-        {
+        .form {
             margin-right: 50%;
         }
 
@@ -96,7 +104,6 @@
             background-color: rgba(0, 0, 0, 0.2);
         }
 
-
         .starrating>input {
             display: none;
         }
@@ -118,23 +125,21 @@
         }
 
         .starrating>input:checked~label {
-            color: #ffca08;
+            color: #f7a000;
         }
 
         /* Set yellow color when star checked */
 
         .starrating>input:hover~label {
-            color: #ffca08;
+            color: #f7a000;
         }
 
         /* Set yellow color when star hover */
-
-        
     </style>
 </head>
 
 <body>
-    <!--nav bar -->
+ <!--nav bar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -160,7 +165,7 @@
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Fairs & Festivals</a>
                 <a class="dropdown-item" href="#">Heritage Properties</a>
-                <a class="dropdown-item" href="#">Travel Dairies</a>
+                <a class="dropdown-item" href="TRAVEL_DIARIES.html">Travel Dairies</a>
            </div>
            </li>
             <li class="nav-item dropdown">
@@ -191,17 +196,17 @@
                 <a class="dropdown-item" href="#">Lakes</a>
                 <a class="dropdown-item" href="#">Palaces</a>
            </div>
-           </li>
+     </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="nav-link" href="about.html">About Us</a>
             </li>
-  </ul>
-  <div class="custom-control custom-switch">
+</ul>
+  <div class="custom-control custom-switch darkb">
       <input type="checkbox" class="custom-control-input" id="darkSwitch" />
       <label class="custom-control-label" for="darkSwitch">🌓 </label>
     </div>
 
-       
+
 
     </div>
 </nav>
@@ -260,59 +265,61 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label for="form_email">Rate our Services</label>
-                                                                             
-                                            <div
-                                                class="starrating risingstar d-flex justify-content-center flex-row-reverse">
-                                                <input type="radio" id="star5" name="rating" value="5" /><label
-                                                    for="star5" title="5 star"></label>
-                                                <input type="radio" id="star4" name="rating" value="4" /><label
-                                                    for="star4" title="4 star"></label>
-                                                <input type="radio" id="star3" name="rating" value="3" /><label
-                                                    for="star3" title="3 star"></label>
-                                                <input type="radio" id="star2" name="rating" value="2" /><label
-                                                    for="star2" title="2 star"></label>
-                                                <input type="radio" id="star1" name="rating" value="1" /><label
-                                                    for="star1" title="1 star"></label>
-                                            </div>
+
+                                        <div
+                                            class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
+                                                title="5 star"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                                title="4 star"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                                                title="3 star"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                                title="2 star"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                                title="1 star"></label>
                                         </div>
-                                            <div class="col-md-12">
-                                               
-                                                    <label class="forme" for="form_email">upload your memories</label>
-                                                    <form class="md-form" action="#">
-                                                        <div class="file-field">
-                                                          <div class="btn btn-primary btn-sm float-left">
-                                                            <span>Choose files</span>
-                                                            <input type="file" multiple>
-                                                          </div>
-                                                         
-                                                        </div>
-                                                      </form>
-                                               
-                                            </div>
-                                </div>
-                            
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Describe your Experience</label>
-                                        <textarea id="form_message" name="message" class="form-control bg-light"
-                                            placeholder="Type here...." rows="4" required="required"
-                                            data-error="Please, leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 text-center">
-                                    <input type="submit" class="btn btn-secondary btn-send" value="Submit review">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <label class="forme" for="form_email">upload your memories</label>
+                                        <form class="md-form" action="#">
+                                            <div class="file-field">
+                                                <div class="btn btn-primary btn-sm float-left">
+                                                    <span>Choose files</span>
+                                                    <input type="file" multiple>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Describe your Experience</label>
+                                            <textarea id="form_message" name="message" class="form-control bg-light"
+                                                placeholder="Type here...." rows="4" required="required"
+                                                data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <input type="submit" class="btn btn-secondary btn-send" value="Submit review">
+                                    </div>
                                 </div>
                             </div>
                     </div>
                 </div>
+                </form>
             </div>
-            </form>
+            <!-- /.8 -->
         </div>
-        <!-- /.8 -->
-    </div>
-    <!-- /.row-->
+        <!-- /.row-->
     </div>
 
     <!-- Footer -->
@@ -373,12 +380,9 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
                     <!-- Content -->
-                    <h6 class="text-uppercase font-weight-bold white-text">Company name</h6>
+                    <h6 class="text-uppercase font-weight-bold white-text">TripTripura</h6>
                     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p class="white-text">Here you can use rows and columns to organize your footer content. Lorem ipsum
-                        dolor sit amet,
-                        consectetur
-                        adipisicing elit.</p>
+                    <p class="white-text">Created by a Traveller for the travellers</p>
 
                 </div>
                 <!-- Grid column -->
