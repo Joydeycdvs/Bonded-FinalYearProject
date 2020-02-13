@@ -16,6 +16,9 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <title>Religious Places - TripTripura</title>
     <link rel="stylesheet" href="dark-mode.css">
+     <!----------------------animate css------------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         body {
@@ -241,13 +244,13 @@
 </nav>
 
     <div class="jumbotron text-center">
-        <h1 class="drktxt">Religions in Tripura</h1>
-        <p class="drktxt">Explore the splendour</p>
+        <h1 data-aos="fade-down" class="drktxt">Religions in Tripura</h1>
+        <p data-aos="fade-down"  class="drktxt">Explore the splendour</p>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6" id="row">
+            <div data-aos="fade-right" class="col-md-6" id="row">
                 <div class="hovereffect">
                     <img class="img-responsive" src="images/isckon.png" alt="">
                     <div class="overlay">
@@ -260,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" id="row">
+            <div data-aos="fade-left" class="col-md-6" id="row">
                 <div class="hovereffect">
                     <img class="img-responsive" src="images/14gods.png" alt="">
                     <div class="overlay">
@@ -274,7 +277,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6" id="row">
+            <div data-aos="fade-right" class="col-md-6" id="row">
                 <div class="hovereffect">
                     <img class="img-responsive" src="images/tripureshwaritemple.jpg" alt="">
                     <div class="overlay">
@@ -288,7 +291,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6" id="row">
+            <div data-aos="fade-left" class="col-md-6" id="row">
                 <div class="hovereffect">
                     <img class="img-responsive" src="images/venubanbihar.jpg" alt="">
                     <div class="overlay">
@@ -302,7 +305,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div data-aos="fade-right" class="col-md-6">
                     <div class="hovereffect">
                         <img class="img-responsive" src="images/Bhubaneshwari.png" alt="">
                         <div class="overlay">
@@ -317,7 +320,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div data-aos="fade-left" class="col-md-6">
                         <div class="hovereffect">
                             <img class="img-responsive" src="images/GEDUMIYA.jpg" alt="">
                             <div class="overlay">
@@ -336,7 +339,7 @@
 
 
     <!-- Footer -->
-    <footer class="page-footer font-small unique-color-dark">
+    <footer data-aos="fade-up" class="page-footer font-small unique-color-dark">
 
         <div style="background-color: #6351ce;">
             <div class="container">
@@ -481,3 +484,6 @@
 </body>
 
 </html>
+<script>
+  AOS.init();
+</script>
