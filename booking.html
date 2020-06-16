@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>E-Ticketing - TripTripura</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="dark-mode.css">
+    <!-- stylesheet -->
+    <style>
+        #brand
+        {
+          /*font-family: 'Lobster', cursive;*/
+          font-family: 'Righteous', cursive;
+        }
+        .jumbotron
+        {
+    		margin-top: 50px;
+    		background-image: url('art.jpg');
+            background-color: rgba(0, 0, 0, 0.904);  
+    		background-size: cover; 
+    	}
+        .card
+    	{
+    		border-radius: 10px;
+    		
+    	}
+        input[type="radio"] 
+        {
+            margin-right: 5px;
+            margin: 0 10px 0 10px;
+        }
+        .checkbox-grid li 
+        {
+            margin: 0 10px 0 10px;
+            display: block;
+            float: left;
+            width: 25%;
+            
+        }
+        .checkbox-grid label
+        {
+            padding-left: 0.4em;
+        }
+    </style>
+</head>
+
+class=""
+<body>
+<!-- nav goes here -->         
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Discover</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Attraction</a>
+                        <a class="dropdown-item" href="#">Wildlife</a>
+                        <a class="dropdown-item" href="#">Museum</a>
+                        <a class="dropdown-item" href="#">Religious Places</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                   </div>
+                   </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Experience</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Fairs & Festivals</a>
+                        <a class="dropdown-item" href="#">Heritage Properties</a>
+                        <a class="dropdown-item" href="#">Travel Dairies</a>
+                   </div>
+                   </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Plan</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Best Time to Visit</a>
+                        <a class="dropdown-item" href="#">How To Get There</a>
+                        <a class="dropdown-item" href="#">Tourist Guides</a>
+                        <a class="dropdown-item" href="#">Travel Desk</a>
+                        <a class="dropdown-item" href="#">Packages</a>
+                        <a class="dropdown-item" href="#">Suggested Itineraries</a>
+                   </div>
+                   </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stay.html">Stay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messageboard.html">Message Board</a>
+                    </li>
+            <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        E-Ticketing</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Museum</a>
+                        <a class="dropdown-item" href="#">Zoo</a>
+                        <a class="dropdown-item" href="#">Parks</a>
+                        <a class="dropdown-item" href="#">Lakes</a>
+                        <a class="dropdown-item" href="#">Palaces</a>
+                   </div>
+                   </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="tooltip" title="Meet The Unsung Heroes behind this Project">About Us</a>
+                    </li>
+                    
+                </ul>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch">🌓 </label>
+                  </div>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-secondary my-sm-0" type="submit">Search</button>
+                </form>
+    
+            </div>
+</nav>
+<div class="jumbotron text-center">
+    <div class="container py-5 text-white text-center">
+         <h1 class="text-shadow hero-heading ">E-Ticketing</h1>
+         <p class="text-shadow lead my-4">Your Bookings made easy & hassle-free by TripTripura</p><a href="#" class="btn btn-outline-light">Go Now</a>
+    </div>
+</div> 
+
+<div class="container">
+
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 py-5"> 
+                <div class="header">
+                    <h3>Book Your Ticket Now</h3>
+                </div>               
+                <div class="card bg-light">
+                   <div class="card-body">
+                   	<form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Select City</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Request quotation">Buisness Enquiry</option>
+                                            <option value="Request order status">Trade Facility</option>
+                                            <option value="Request copy of an invoice">Feedback</option>
+                                            <option value="Other">Others</option>
+                                        </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Select Ticket Type</label>
+                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Request quotation">Buisness Enquiry</option>
+                                            <option value="Request order status">Trade Facility</option>
+                                            <option value="Request copy of an invoice">Feedback</option>
+                                            <option value="Other">Others</option>
+                                        </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_email">Select Places</label>
+                                    <ul class="checkbox-grid">
+                                            <li><input type="checkbox" name="text1" value="value1" /><label for="text1">Ujjyanta Palace</label></li>
+                                            <li><input type="checkbox" name="text2" value="value2" /><label for="text2">Neermahal</label></li>
+                                            <li><input type="checkbox" name="text3" value="value3" /><label for="text3">Sipahijala Sanctuary</label></li>
+                                            <li><input type="checkbox" name="text4" value="value4" /><label for="text4">Trishna Sanctuary</label></li>
+                                            <li><input type="checkbox" name="text5" value="value5" /><label for="text5">Heritage Park</label></li>
+                                            <li><input type="checkbox" name="text6" value="value6" /><label for="text6">Rabindra Kanan</label></li>
+                                            <!-- <li><input type="checkbox" name="text7" value="value7" /><label for="text7">Ujjyanta Palace</label></li>
+                                            <li><input type="checkbox" name="text8" value="value8" /><label for="text8">Ujjyanta Palace</label></li>
+                                            <li><input type="checkbox" name="text8" value="value8" /><label for="text8">Ujjyanta Palace</label></li> -->
+                                          </ul>
+                                    
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Visitor Type</label><br>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" checked>Indian Citizen
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Foreign Citizen
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Indian Student
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Foreign Student
+                                    </label>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_message">Number of Tickets</label>
+                                        <input id="form_number" type="number" name="number" class="form-control" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_message">Visiting Date</label>
+                                            <input id="form_date" type="date" name="number" class="form-control" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" class="btn btn-success btn-send" value="Book Ticket">
+                                </div>
+                            </div>
+                      </div>
+                   </div>
+                </div>
+             </form>
+          </div>
+        </div>
+</div>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+        <div style="background-color: #6351ce;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold white-text">TRIP TRIPURA</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">KNOW</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">ATTRACTIONS</a>
+                    </p>
+                    <p>
+                        <a href="#!">WILDLIFE</a>
+                    </p>
+                    <p>
+                        <a href="#!">RELIGIOUS PLACE</a>
+                    </p>
+                    <p>
+                        <a href="#!">HOTEL-INFO</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="white-text">
+                        <i class="fas fa-home mr-3"></i> AGARTALA,TRIPURA,INDIA</p>
+                    <p class="white-text">
+                        <i class="fas fa-envelope mr-3"></i> triptripura@gmail.com</p>
+                    <p class="white-text">
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p class="white-text">
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="INDEX.HTML"> TRIPTRIPURA.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+<script src="dark-mode-switch.js"></script>
+</html>

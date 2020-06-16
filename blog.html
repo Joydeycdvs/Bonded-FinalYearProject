@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/8db018c26a.js" crossorigin="anonymous"></script>
+  <!-- /font-awsome -->
+  <!-- font-awsome animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="dark-mode.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add a gray background color with some padding */
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: white;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /*scroll down animation*/
+    .container {
+
+      position: relative;
+      margin-left: 48%;
+      margin-bottom: 5px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .chevron {
+      position: absolute;
+      width: 28px;
+      height: 8px;
+      opacity: 0;
+      transform: scale3d(0.5, 0.5, 0.5);
+      animation: move 3s ease-out infinite;
+    }
+
+    .chevron:first-child {
+      animation: move 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2) {
+      animation: move 3s ease-out 2s infinite;
+    }
+
+    .chevron:before,
+    .chevron:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 51%;
+      background: #fff;
+    }
+
+    .chevron:before {
+      left: 0;
+      transform: skew(0deg, 30deg);
+    }
+
+    .chevron:after {
+      right: 0;
+      width: 50%;
+      transform: skew(0deg, -30deg);
+    }
+
+    @keyframes move {
+      25% {
+        opacity: 1;
+
+      }
+
+      33% {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+
+      67% {
+        opacity: 1;
+        transform: translateY(40px);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+      }
+    }
+
+    .text {
+      display: block;
+      margin-top: 75px;
+      margin-left: -30px;
+      font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+      white-space: nowrap;
+      opacity: .25;
+      animation: pulse 2s linear alternate infinite;
+    }
+
+    @keyframes pulse {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .blog-img {
+      width: 20%;
+      height: 10rem;
+      padding-right: 5px;
+    }
+    .logo-img
+    {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 2rem;
+    }
+
+    .footer-fav {
+      padding: 0 30px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div id="navbarSupportedContent">
+
+      <div class="custom-control custom-switch" style="position: fixed-right;">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+        <label class="custom-control-label" for="darkSwitch">🌓 </label>
+      </div>
+
+    </div>
+  </nav>
+  <div class="header bg-light">
+    <div class="header_text bg-pink">
+
+      <p class="bg-pink" style="text-align: center;">Scroll here to know about tourists experience</p>
+      <div class="container" style="text-align: center">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row bg-light">
+    <div class="leftcolumn">
+      <div class="card bg-light">
+        <h2 class="bg-pink">Chabimura trip</h2>
+        <h5 class="bg-pink">A wonderful journer with friends, Dec 7, 2017</h5>
+
+        <div class="fakeimg bf-pink" style="height:200px;"><img class="img-fluid blog-img" src="images1/chobimura2.jpg">
+          <img class="img-fluid blog-img" src="images1/chobimura1.jpg">
+          <img class="img-fluid blog-img" src="images/chabimura.jpg">
+        </div>
+        <p class="bg-pink">River boating</p>
+        <p class="bg-pink">It was an awesome experience.The trip was totally worth-it.The place is
+          immensly beautiful with lush green forests.Beautiful camping and hiking sights. </p>
+      </div>
+      <div class="card bg-light">
+        <h2 class="bg-pink">Dumboor Trip</h2>
+        <h5 class="bg-pink">Trip to be remembered, Sep 13, 2016</h5>
+        <div class="fakeimg " style="height:200px;"><img class="img-fluid blog-img" src="images/dumboorlake1.png">
+          <img class="img-fluid blog-img" src="images/narikelkunja.jpg">
+
+        </div>
+        <p class="bg-pink">Wonderful Experience</p>
+        <p class="bg-pink">The day was synny.We were in between a giant lake filled with blue water.
+          Till now I remember.Especially the Guides were amazing, they play a massive role in making our trip
+          memorable.
+        </p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card bg-light">
+        <h2 class="bg-pink">About Me</h2>
+        <div class="fakeimg" style="height:100px;">
+          <div>
+            <img class="img-fluid logo-img" src="images/profilelogo3.png ">
+          </div>
+        </div>
+        <p class="bg-pink">Some text about me </p>
+      </div>
+      <div class="card bg-light">
+        <h3 class="bg-pink">Popular Post</h3>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card bg-light">
+        <h3 class="bg-pink">Follow Me</h3>
+        <p class="bg-pink">
+          <i class="footer-fav fab fa-twitter animate__animated animate__swing"></i>
+          <i class="footer-fav fab fa-instagram animate__animated animate__swing"></i>
+          <i class="footer-fav fab fa-facebook-f animate__animated animate__swing"></i>
+          <i class="footer-fav fas fa-envelope animate__animated animate__swing"></i>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="dark-mode-switch.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

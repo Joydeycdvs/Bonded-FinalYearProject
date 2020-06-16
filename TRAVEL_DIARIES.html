@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Diaries- TripTripura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+    <!-- Darkmode CSS -->
+    <link rel="stylesheet" href="dark-mode.css">
+
+    <style type="text/css">
+        a {
+            color: grey !important;
+        }
+
+        .row {
+            margin: 10px;
+        }
+
+        #container h1 {
+            text-align: center;
+            font-family: 'Fredoka One', cursive;
+            margin-top: 20%;
+        }
+
+        .jumbotron {
+            background: transparent;
+            color: white;
+        }
+
+
+        #brand {
+            /*font-family: 'Lobster', cursive;*/
+            font-family: 'Righteous', cursive;
+        }
+
+        #container p {
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .navbar a {
+            color: rgb(63, 63, 63) !important;
+        }
+
+        .darkbutton {
+            position: absolute;
+            margin-left: 50%;
+        }
+
+        .file-field {
+            width: 50% important;
+        }
+
+        body {
+            background-color: #ff9d00;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .form {
+            margin-right: 50%;
+        }
+
+        /* footer */
+
+        .unique-color-dark {
+            background-color: #1c2331 !important;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .deep-purple.accent-2 {
+            background-color: #7c4dff !important;
+        }
+
+        footer.page-footer .footer-copyright {
+            overflow: hidden;
+            color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .starrating>input {
+            display: none;
+        }
+
+        /* Remove radio buttons */
+
+        .starrating>label:before {
+            content: "\f005";
+            /* Star */
+            margin: 0px;
+            font-size: 30PX;
+            font-family: FontAwesome;
+            display: inline-block;
+        }
+
+        .starrating>label {
+            color: #222222;
+            /* Start color when not clicked */
+        }
+
+        .starrating>input:checked~label {
+            color: #f7a000;
+        }
+
+        /* Set yellow color when star checked */
+
+        .starrating>input:hover~label {
+            color: #f7a000;
+        }
+
+        /* Set yellow color when star hover */
+    </style>
+</head>
+
+<body>
+    <!--nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Discover</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ATTRACTION.HTML">Attraction</a>
+                        <a class="dropdown-item" href="WILDLIFE.HTML">Wildlife</a>
+                        <a class="dropdown-item" href="MUSEUM.HTML">Museum</a>
+                        <a class="dropdown-item" href="religiousplaces.html">Religious Places</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Experience</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Fairs & Festivals</a>
+                        <a class="dropdown-item" href="#">Heritage Properties</a>
+                        <a class="dropdown-item" href="TRAVEL_DIARIES.html">Travel Dairies</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Plan</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Best Time to Visit</a>
+                        <a class="dropdown-item" href="#">How To Get There</a>
+                        <a class="dropdown-item" href="#">Tourist Guides</a>
+                        <a class="dropdown-item" href="#">Travel Desk</a>
+                        <a class="dropdown-item" href="packages.html">Packages</a>
+                        <a class="dropdown-item" href="#">Suggested Itineraries</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stay.html">Stay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="messageboard.html">Message Board</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="booking.html" id="navbardrop" data-toggle="dropdown">
+                        E-Ticketing</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Museum</a>
+                        <a class="dropdown-item" href="#">Zoo</a>
+                        <a class="dropdown-item" href="#">Parks</a>
+                        <a class="dropdown-item" href="#">Lakes</a>
+                        <a class="dropdown-item" href="#">Palaces</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="darkbutton">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                        <label class="custom-control-label" for="darkSwitch">🌓 </label>
+                    </div>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+    </nav>
+
+    <!-- form -->
+
+    <div class="container" id="container">
+
+        <div class=" row">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+
+                <div class="jumbotron text-center">
+                    <h1 class="bg-pink">LET THE WORLD KNOW YOUR EXPERIENCE ABOUT TRIPURA!</h1><br>
+                    <h6 class="lead">Share your Experience of the Trip To Tripura and let the world know about its
+                        beauty.</h6>
+                </div>
+
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <form id="contact-form" method="post" action="contact.php" role="form" autocomplete="off">
+
+                            <div class="messages"></div>
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Firstname</label>
+                                            <input id="form_name" type="text" name="name" class="form-control bg-light"
+                                                placeholder="Please enter your firstname" required="required"
+                                                data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Lastname</label>
+                                            <input id="form_lastname" type="text" name="surname"
+                                                class="form-control bg-light" placeholder="Please enter your lastname"
+                                                required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email</label>
+                                            <input id="form_email" type="email" name="email"
+                                                class="form-control bg-light" placeholder="Please enter your email"
+                                                required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="form_email">Rate our Services</label>
+
+                                        <div
+                                            class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
+                                                title="5 star"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                                title="4 star"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                                                title="3 star"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                                title="2 star"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                                title="1 star"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <label class="forme" for="form_email">upload your memories</label>
+                                        <div class="input-group mb-3">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                                <label class="custom-file-label" for="inputGroupFile02">Choose
+                                                    file</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="">Upload</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Describe your Experience</label>
+                                            <textarea id="form_message" name="message" class="form-control bg-light"
+                                                placeholder="Type here...." rows="4" required="required"
+                                                data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <input type="submit" class="btn btn-secondary btn-send" value="Submit review">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!-- /.8 -->
+        </div>
+        <!-- /.row-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+        <div style="background-color: #6351ce;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold white-text">TripTripura</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="white-text">Created by a Traveller for the travellers</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Products</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="white-text">
+                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p class="white-text">
+                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p class="white-text">
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p class="white-text">
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- Darkmode JS -->
+    <script src="dark-mode-switch.js"></script>
+</body>
+
+</html>

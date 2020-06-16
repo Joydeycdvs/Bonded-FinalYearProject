@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best_time_to_visit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="dark-mode.css">
+    <style>
+        .jumbotron {
+            margin-top: 50px;
+            background-image: url('about.png');
+            background-size: cover;
+            height: 350px;
+        }
+
+        .card {
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+            background-color: rgba(54, 140, 238, 0.609);
+        }
+
+        .fawsm {
+            font-size: 1.2rem;
+        }
+
+        .card-header {
+            font-size: 1.5rem;
+        }
+
+        a:hover {
+            color: grey !important;
+        }
+
+        a {
+            color: grey !important;
+        }
+
+        .tinfo {
+            color: bisque;
+            padding-bottom: 1rem;
+        }
+
+        .tablerow {
+            border-bottom: 1px solid rgba(40, 165, 214, 0.904);
+        }
+        .detailscard
+        {
+            color: rgba(70, 67, 67, 0.856);
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!--nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" id="brand" href="index.html">TripTripura</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Discover</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="ATTRACTION.HTML">Attraction</a>
+                        <a class="dropdown-item" href="WILDLIFE.HTML">Wildlife</a>
+                        <a class="dropdown-item" href="MUSEUM.HTML">Museum</a>
+                        <a class="dropdown-item" href="religiousplaces.html">Religious Places</a>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Experience</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="fairs.html">Fairs & Festivals</a>
+                        <a class="dropdown-item" href="haritage_properties.html">Heritage Properties</a>
+                        <a class="dropdown-item" href="TRAVEL_DIARIES.html">Travel Dairies</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Plan</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Best Time to Visit</a>
+                        <a class="dropdown-item" href="#">How To Get There</a>
+                        <a class="dropdown-item" href="#">Tourist Guides</a>
+                        <a class="dropdown-item" href="#">Travel Desk</a>
+                        <a class="dropdown-item" href="packages.html">Packages</a>
+                        <a class="dropdown-item" href="#">Suggested Itineraries</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stay.html">Stay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="messageboard.html">Message Board</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="booking.html" id="navbardrop" data-toggle="dropdown">
+                        E-Ticketing</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Museum</a>
+                        <a class="dropdown-item" href="#">Zoo</a>
+                        <a class="dropdown-item" href="#">Parks</a>
+                        <a class="dropdown-item" href="#">Lakes</a>
+                        <a class="dropdown-item" href="#">Palaces</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch">🌓 </label>
+            </div>
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <!-- nav ends here -->
+
+    <div class="jumbotron text-center">
+        <div class="container py-5 text-white text-center">
+            <h1 class="text-shadow hero-heading">How to reach Tripura</h1>
+            <p class="text-shadow lead my-4">The Princely State Of India</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card text-white mb-3 col-lg-4 col-md-6 col-sm-12" style="max-width: 100%;">
+            <div class="card-header">Basic Info&nbsp;&nbsp;<i class="fas fa-info"></i></div>
+            <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-sun"></i>&nbsp;Weather Forecast</h5>
+                <p class="card-text">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/23d9491d99/tripura/"
+                        data-label_1="TRIPURA" data-label_2="WEATHER" data-font="Play" data-mode="Current">TRIPURA
+                        WEATHER</a>
+                </p>
+                <table class="table table-responsive" style="width:100%">
+                    <tr>
+                        <th rowspan="2"><i class="fas fa-binoculars"></i></th>
+                        <td>Attractions</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td class="tinfo">Lush green cities</td>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="2"><i class="fas fa-mountain"></i></th>
+                        <td>Altitude</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td class="tinfo">12 M.</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2"><i class="fas fa-suitcase-rolling"></i></th>
+                        <td>Best Season</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td class="tinfo">October-March</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2"><i class="fas fa-suitcase-rolling"></i></th>
+                        <td>Capital code/Agartala</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td class="tinfo">799001</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2"><i class="fas fa-suitcase-rolling"></i></th>
+                        <td>Language</td>
+                    </tr>
+                    <tr class="tablerow">
+                        <td class="tinfo">Bengali,Hindi,Kokborok,<br>Tripuri,chakma</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="card bg-light col-lg-4 col-md-6 col-sm-12" style="max-width: 100%;">
+            <div class="card-header detailscard bg-pink">How to Reach Agartala</div>
+            <div class="card-body">
+                <p><h6 class="detailscard bg-pink"> How to reach Agartala by Air:</h4></p>
+                <p>Agartala Airport is one of the busy airports of the north east and connects
+                     Agartalato other cities of India. Kolkata, Imphal, Delhi, Silchar, Aizwal,
+                      Guwahati, Bangalore, Chennai, Ahmadabad and Mumbai have connections for this
+                       city. Several major airlines like Air India, Jet Airways, and Indigo Airlines
+                        provid their air services to customers taking flights to Agartala.</p>
+                    <a href="https://www.goindigo.in/" target="_blank"><p><i class="fas fa-plane"></i>&nbsp;&nbsp;&nbsp;&nbsp;Click here to book Indigo flight</p></a>
+                    <a href="https://www.airasia.com/flights/india" target="_blank"><p><i class="fas fa-plane"></i>&nbsp;&nbsp;&nbsp;&nbsp;Click here to book Air-asia flight</p></a>
+                    <h5 class="detailscard bg-pink">Nearest Airport :Maharaja Bir Bikram Airport,Agartala</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+        <div style="background-color: #6351ce;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Company name</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="white-text">Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Products</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">MDBootstrap</a>
+                    </p>
+                    <p>
+                        <a href="#!">MDWordPress</a>
+                    </p>
+                    <p>
+                        <a href="#!">BrandFlow</a>
+                    </p>
+                    <p>
+                        <a href="#!">Bootstrap Angular</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold white-text">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="white-text">
+                        <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p class="white-text">
+                        <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p class="white-text">
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p class="white-text">
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- darkmode script -->
+    <script src="dark-mode-switch.js"></script>
+    <!-- darkmode script ends here -->
+
+    <!-- weather script -->
+    <script>
+        ! function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'weatherwidget-io-js');
+    </script>
+    <!-- weather script -->
+</body>
+
+</html>

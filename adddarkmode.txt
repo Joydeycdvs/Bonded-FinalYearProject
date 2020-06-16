@@ -1,0 +1,16 @@
+How to add Darkmode to New Pages
+
+1.  Add CSS link for Drakmode
+    <link rel="stylesheet" href="dark-mode.css">
+
+2.  Add Custom Darkmode Switch in the nav bar whose position should be before the 
+    <form> tag and after the </ul> tag. Button Code
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+        <label class="custom-control-label" for="darkSwitch">🌓 </label>
+    </div>
+
+3.  Finally load the darkmode.js script
+    <script src="dark-mode-switch.js"></script>
+
+4.  You are all set!

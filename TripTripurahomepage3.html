@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   
+   <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <style type="text/css">
+    
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+   .btn
+{
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 10px 10px 40px rgba(0,0,0,1.5);
+}
+.btn span
+{
+    position: absolute;
+    display: block;
+    background: #fff;
+}
+.btn span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    width: 2px;
+    height: 100%;
+}
+.btn:hover span:nth-child(1)
+{
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+.btn span:nth-child(4)
+{
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+    width: 2px;
+    height: 100%;
+}
+.btn:hover span:nth-child(4)
+{
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+.btn span:nth-child(2)
+{
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 2px;
+}
+.btn:hover span:nth-child(2)
+{
+    transform: translateX(100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+.btn span:nth-child(5)
+{
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 2px;
+}
+.btn:hover span:nth-child(5)
+{
+    transform: translateX(-100%);
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+.btn span:nth-child(3)
+{
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    width: 2px;
+    height: 100%;
+}
+.btn:hover span:nth-child(3)
+{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}
+.btn span:nth-child(6)
+{
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 2px;
+    height: 100%;
+}
+.btn:hover span:nth-child(6)
+{
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+}
+
+
+
+
+ /*---------------------------*/
+    .container{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+
+    }
+    .container .slider
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500%;
+      height: 100%;
+      float: left;
+      animation: animate 20s linear infinite;
+
+    }
+    .container .slider .slide
+    {
+      position: relative;
+      width: 20%;
+      height: 100%;
+      float: left;
+
+    }
+    .container .slider .slide .caption
+    {
+      position: fixed-top;
+      bottom: 60px;
+      left: 60px;
+      right: 60px;
+      padding: 30px;
+      background: transparent;
+       transition: 0.5s;
+       box-sizing: border-box;       
+      
+    }
+    .container .slider .slide .caption h2,.myhead
+    {
+        margin: 0 0 20px;
+        padding: 0;
+        color: #fff;
+        font-weight: 17px;
+        font-size: 40px;
+        transition: 0.5s;
+        
+    }
+    .container .slider .slide .caption p
+    {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+    .container .slider .slide.slide1
+    {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(slide.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide2
+    {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(fp2.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide3
+    {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(fp4.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container .slider .slide.slide4
+    {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(fp5.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    sub{
+      font-size: 15px;
+      font-weight: 6px;
+    }
+
+    @keyframes animate{
+      0%
+      {
+        left: 0;
+      }
+      20%
+      {
+        left: 0;
+      }
+      25%
+      {
+        left: -100%;
+      }
+      45%
+      {
+        left: -100%;
+      }
+       50%
+      {
+        left: -200%;
+      }
+      70%
+      {
+        left: -200%;
+      }
+      75%
+      {
+        left: -300%;
+      }
+      95%
+      {
+        left: -300%;
+      }
+      100%
+      {
+        left: -400%;
+      }
+    }
+    ul{
+    	z-index:1000;
+    	margin:20px;
+    	position:absolute;
+    	right:0;
+  		list-style-type: none;
+    }
+    ul li
+{
+  display: inline;
+
+}
+ul li a
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  
+}
+ul li a:hover
+{
+
+ border-bottom:1px solid #fff;
+  color: #fff;
+}
+.button
+{
+  position: absolute;
+  top: 62%;
+  left: 70%;
+  transform: translate(-50%,-50%);
+}
+.btn
+{
+ 
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+}
+/*.btn:hover
+{
+  background-color: #fff;
+  color: #000;
+  border: 1px;
+}*/
+.tag
+{
+   font-family: 'Aclonica';
+   font-size: 42px;
+   color: #fff;
+   position: absolute;
+   margin-top: 20%;
+   align-content: center;
+}
+/*responsiveness*/
+@media (max-width: 768px)
+    {
+    	.myhead
+    	{
+    		position: absolute;
+    		z-index: 100;
+    	}
+      .container .slider .slide .caption
+      {
+     
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      padding: 20px;
+      background: transparent;
+      
+     }
+      .container .slider .slide .caption h2
+      {
+        margin: 0 0 10px;
+        font-weight: 13px;
+        font-size: 25px;
+
+      }
+      .container .slider .slide .caption p
+      {
+        font-size: 14px;
+
+      }
+      .tag
+      {
+        font-family: 'Aclonica';
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        float: left;
+        margin-top: 90%;
+        margin-left: -1%;
+        align-content: center;
+      }
+      .button
+{
+  position: absolute;
+  font-size: 1px;
+  top: 62%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%,-50%);
+}
+.btn
+{
+  
+  font-size: 10px;
+  padding-left: 35px;
+  widows: 20px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn1
+{
+  
+  font-size: 10px;
+  margin-top: 10%;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+.myhead
+{
+  font-size: 25px;
+}
+ul
+{
+  font-size: 1px;
+}
+
+
+    }
+/*end*/
+
+
+</style>
+</head>
+<body>
+ <div class="container">
+	  <span class="myhead" style="z-index:100;margin:20px;position:fixed;"> TripTripura<sub>.com</sub> </span>
+        
+
+        <ul style="z-index:100;margin:20px;position:absolute";>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">ABOUT US</a></li>
+        </ul>
+       
+        <div class="tag" style="z-index:100;position:absolute;top:10%; left:50%; transform:translate(-50%, -50%);">
+		<h3>Your Vaccation Our Tension.</h3></div>
+        <div class="slider">
+          <div class="slide slide1">
+            <div class="caption">
+             <!-- <h2>TripTripura<sub>.com</sub></h2>
+              -->
+            </div>
+          </div>
+
+          <div class="slide slide2">
+            <div class="caption">
+             <!-- <h2>TripTripura<sub>.com</sub></h2>
+              -->
+              
+            </div>
+          </div>
+
+          <div class="slide slide3">
+            <div class="caption">
+             <!-- <h2>TripTripura<sub>.com</sub></h2>
+              -->
+            
+            </div>
+          </div>
+
+          <div class="slide slide4">
+            <div class="caption">
+             <!-- <h2>TripTripura<sub>.com</sub></h2>
+              -->
+            </div>
+          </div>
+
+          <div class="slide slide1">
+            <div class="caption">
+             <!-- <h2>TripTripura<sub>.com</sub></h2>
+              -->
+             
+            </div>
+          </div>
+        </div>
+         <div class="button" style="z-index:100;position:absolute; top:70%; left:50%; transform:translate(-50%, -50%);">
+               <!--<a href="#" class="btn">TOURIST USER</a>-->
+               <a href="LOGIN.HTML" class="btn"  style="position:absolute; right: 0; padding-right:57px;">
+                  LOGIN  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+
+                <a href="REGISTER.html" class="btn">
+                  SIGN-UP 
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+               <!--<a href="#" class="btn btn1" style="padding-left:40px;padding-right: 40px;">LOCAL USER</a>-->
+     
+        </div>
+      </div>
+      <!-- Script for tooltip -->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</body>
+</html>
